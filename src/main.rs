@@ -7,6 +7,7 @@ mod day4;
 mod day5;
 mod day6;
 mod day7;
+mod day8;
 
 fn main() {
 
@@ -42,7 +43,11 @@ fn main() {
             day7::part1();
             day7::part2();
         }
-        0_u32 | 8_u32..=u32::MAX => todo!()
+        8 => {
+            day8::part1();
+            day8::part2();
+        }
+        0_u32 | 9_u32..=u32::MAX => todo!()
     }
 
     
